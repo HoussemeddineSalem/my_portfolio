@@ -16,7 +16,7 @@ function Contact() {
     const handleSubmit = () => {
         try {
 
-            axios.post("http://localhost:8000/contact", {
+            axios.post("https://houssemsalem.herokuapp.com/contact", {
                 name: entry.name,
                 email: entry.email,
                 object: entry.object,

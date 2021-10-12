@@ -7,9 +7,6 @@ const Aboutme = () => {
     return (
 
         <div id="about" className='aboutme_and_contact'>
-
-
-
             <article className='article'>
                 <h3>About me :</h3>
                 <p>

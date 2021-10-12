@@ -10,8 +10,6 @@
   height: 60vh;
   display: grid;
   grid-template-columns: 35% 65%;
-  /* flex-direction: row;
-  justify-content: space-around; */
   align-items: center;
   font-family: 'Merriweather', sans-serif;
   text-align: center;
@@ -45,8 +43,20 @@ span {
   font-size: 50px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .typewriter {
     font-size: 20px;
+  }
+  .intro_styling {
+    background-color: #ecf0f2;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Merriweather', sans-serif;
+    text-align: center;
+  }
+  span {
+    color: green;
   }
 }

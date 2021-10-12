@@ -27,16 +27,7 @@ function Contact() {
             console.log(error)
         }
     }
-
-    // setClicked(!clicked)
-
     console.log(clicked)
-
-    // useEffect(() => {
-
-
-    // }, [clicked])
-
     return (
         <div id="contact" className="contactme">
 

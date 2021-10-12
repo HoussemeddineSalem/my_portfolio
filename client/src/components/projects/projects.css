@@ -56,7 +56,11 @@
 .img_container:hover .mybestnanny_img {
   opacity: 0;
 }
-
+.wrapin_tech {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .mybestnanny {
   width: 30vw;
   margin: 0 2%;
@@ -108,7 +112,12 @@
     background-image: linear-gradient(to left, #b1b5b5, #a0a3a3);
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
+  #parag_under_projects {
+    width: 100vw;
+    line-height: normal;
+  }
+
   .mybestnanny_proj {
     flex-direction: column;
   }

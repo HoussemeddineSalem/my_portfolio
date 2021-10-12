@@ -14,3 +14,12 @@
   box-shadow: 0 3px 5px grey;
   width: 100vw;
 }
+
+@media (max-width: 1000px) {
+  .item_styling {
+    letter-spacing: 2px;
+    font-weight: bolder;
+    margin: 0 3%;
+    font-size: 17px;
+  }
+}

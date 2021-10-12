@@ -63,13 +63,20 @@ a {
 span {
   text-decoration: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .aboutme_and_contact {
-    flex-direction: column;
+    display: block;
+    height: fit-content;
+    /* flex-direction: row; */
   }
   .article {
-    width: auto;
-    padding: 1% 3%;
+    width: 100vw;
+    margin-top: 0;
+    padding: 0 3%;
     /* border: 1px black solid; */
+  }
+  .contact {
+    margin-top: 10%;
+    margin-bottom: 20%;
   }
 }

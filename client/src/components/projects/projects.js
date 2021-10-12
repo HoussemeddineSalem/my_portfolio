@@ -32,12 +32,15 @@ const Projects = () => {
                         <i class="fas fa-chevron-circle-right"></i>Nannys to : <br />
                         Post their profile in order to be visible for the baby sitting seekers
                     </p>
-                    <p>Technologies</p>
-                    {['reactjs', 'redux', 'axios', 'nodejs', 'jwt', 'expressjs', 'mongoDB', 'mongoose'].map(
-                        el => {
-                            return <span className="tech_styling">{el}</span>
-                        }
-                    )}
+                    <p>Technologies </p>
+                    <div className="wrapin_tech">
+                        {['reactjs', 'redux', 'axios', 'nodejs', 'jwt', 'expressjs', 'mongoDB', 'mongoose'].map(
+                            el => {
+                                return <span className="tech_styling">{el}</span>
+                            }
+                        )}
+                    </div>
+
 
                 </div>
             </div>
@@ -56,11 +59,13 @@ const Projects = () => {
                             <a href={el.github} target="_blank"><p className='project_title'>{el.title} <i class="fab fa-github fa-1x"></i></p> </a>
                             <p>{el.description}</p>
                             <p>Technologies</p>
-                            {
-                                el.technologies.map(el => {
-                                    return <span className="tech_styling">{el}</span>
-                                })
-                            }
+                            <div className="wrapin_tech">
+                                {
+                                    el.technologies.map(el => {
+                                        return <span className="tech_styling">{el}</span>
+                                    })
+                                }
+                            </div>
                         </div>
                     </div>
                 })

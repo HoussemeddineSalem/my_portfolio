@@ -61,8 +61,38 @@
   margin-top: 2%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
+  .contactme {
+    background-color: #ecf0f2;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+
   .form_container {
-    margin-top: 10%;
+    margin-top: 20%;
+  }
+  .form_layout {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    margin: auto;
+  }
+  .phone_email {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 7vw;
+    margin: 0;
+    align-items: center;
   }
 }

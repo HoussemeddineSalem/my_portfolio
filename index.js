@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }))
 
 const port = process.env.PORT || 8000;
 mongoose
-    .connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster1.umkwn.mongodb.net/portfolio`
+    .connect(process.env.MONGODB_URI || `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster1.umkwn.mongodb.net/portfolio`
     )
     .then(() => app.listen(port, () => console.log("server is running on port 8000")))
     .catch((err) => console.log(err));

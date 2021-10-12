@@ -1,0 +1,119 @@
+* {
+  font-family: 'Merriweather', sans-serif;
+}
+
+.project_intro {
+  margin-top: -50px;
+  padding-top: 50px;
+  background-color: #ecf0f2;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+#parag_under_projects {
+  width: 50vw;
+  line-height: 50px;
+}
+.mybestnanny_proj {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.img_container {
+  position: relative;
+}
+
+.mybestnanny_img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+
+.middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+  background-color: #f5f8fa;
+  transition: 0.3s ease;
+  border-radius: 10px;
+}
+
+.img_container:hover .middle {
+  width: 100%;
+}
+.img_container:hover .mybestnanny_img {
+  opacity: 0;
+}
+
+.mybestnanny {
+  width: 30vw;
+  margin: 0 2%;
+}
+
+.project_title {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.source_btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #111111;
+  color: #111111;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+.source_btn:hover {
+  background: #111111;
+  color: white;
+}
+.tech_styling {
+  background-color: #b1b5b5;
+  padding: 1.25% 1.25%;
+  margin-right: 2%;
+  color: whitesmoke;
+  text-decoration: none;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  border-radius: 3px;
+}
+
+@keyframes example {
+  from {
+    background-image: linear-gradient(to right, #b1b5b5, #a0a3a3);
+  }
+  to {
+    background-image: linear-gradient(to left, #b1b5b5, #a0a3a3);
+  }
+}
+@media (max-width: 800px) {
+  .mybestnanny_proj {
+    flex-direction: column;
+  }
+
+  .mybestnanny {
+    width: 100vw;
+  }
+}

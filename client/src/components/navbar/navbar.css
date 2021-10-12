@@ -1,0 +1,16 @@
+.spacing_navbar_items {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.item_styling {
+  letter-spacing: 5px;
+  font-weight: bolder;
+  margin: 0 3%;
+}
+
+.navbar_styling {
+  background-color: #ffff;
+  box-shadow: 0 3px 5px grey;
+  width: 100vw;
+}

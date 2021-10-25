@@ -1,18 +1,30 @@
+.introduction {
+  margin-top: -60px;
+  padding-top: 100px;
+  height: 100vh;
+  & > p {
+    margin-bottom: 100px;
+  }
+
+  & > p,
+  h1 {
+    text-align: center;
+  }
+}
+
 .aboutme_and_contact {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   font-family: 'Merriweather', sans-serif;
   line-height: 1.75em;
-  height: 100vh;
   align-items: center;
-  display: flex;
   flex-direction: row;
 }
 
 .article {
   width: 45vw;
-  padding: 1% 3%;
+  // padding: 1% 3%;
   /* border: 1px black solid; */
 }
 
@@ -63,6 +75,52 @@ a {
 span {
   text-decoration: none;
 }
+
+#JavaScript,
+#HTML {
+  animation: come-and-go 5s linear infinite;
+}
+#ReactJS,
+#NodeJS,
+#CSS {
+  animation: come-and-go-reverse 5s linear infinite;
+}
+
+@keyframes come-and-go {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: TranslateX(10px);
+  }
+  50% {
+    transform: TranslateX(15px);
+  }
+  75% {
+    transform: TranslateX(5px);
+  }
+  100% {
+    transform: TranslateX(0px);
+  }
+}
+@keyframes come-and-go-reverse {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: TranslateX(-5px);
+  }
+  50% {
+    transform: TranslateX(-10px);
+  }
+  75% {
+    transform: TranslateX(-5px);
+  }
+  100% {
+    transform: TranslateX(0px);
+  }
+}
+
 @media (max-width: 1000px) {
   .aboutme_and_contact {
     display: block;

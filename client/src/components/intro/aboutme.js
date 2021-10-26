@@ -7,31 +7,55 @@ import resume from '../../img/houssemeddineSalem_res.pdf'
 const Aboutme = () => {
     return (
         <div id="about" className="introduction">
-            <h1>Who Am I ?</h1>
+            <h1>About me</h1>
             <p>
                 I'm a Junior Full-Stack Web Developer who takes pride in building beautiful and functional web applications.
             </p>
 
             <div className='aboutme_and_contact'>
-                <article className='article'>
-                    <h3>About me :</h3>
-                    <p>
-                        Hello, My name is Houssem eddine Salem and I am a Full-Stack Developer from Nabeul, Tunisia.
-                    </p>
-                    <p>
-                        I enjoy turning complex problems into simple, beautiful and intuitive designs
-                    </p>
-                    <div className="skills">
-                        <p>My Skills are : </p>
-                        <p><i class="fas fa-palette"></i><span>  Frontend :</span>  HTML, CSS, JavaScript, ReactJs, Redux, MaterialUI, Bootstrap</p>
-                        <p><i class="fas fa-wrench"></i><span>  Backend :</span>  NodeJs, ExpressJs, REST API, PassportJS, JWT, EJS</p>
-                        <p><i class="fas fa-database"></i><span>  DataBase :</span>  MongoDB, Mongoose(ORM)</p>
-                        <p><i class="fas fa-anchor"></i><span>  Integration tools :</span>  Git</p>
-                        <p><i class="fas fa-vial"></i><span>  Testing Framework :</span>  Jest</p>
-                    </div>
-                    <p>Click below to download my resume as a PDF.</p>
+                <div>
+                    <article className='article'>
+                        <div>
+                            <i class="devicon-html5-plain colored technos-icon"></i>
+                            <i class="devicon-javascript-plain colored technos-icon"></i>
+                            <i class="devicon-css3-plain colored technos-icon"></i>
+                            <i class="devicon-sass-original colored technos-icon"></i>
+                            <i class="devicon-react-original colored  technos-icon"></i>
+                        </div>
+                        <div>
+                            <i class="devicon-redux-original colored technos-icon"></i>
+                            <i class="devicon-bootstrap-plain colored technos-icon"></i>
+                            <i class="devicon-materialui-plain colored technos-icon"></i>
+                            <i class="devicon-nodejs-plain colored technos-icon"></i>
+                            <i class="devicon-express-original colored technos-icon"></i>
+                        </div>
+                        <div>
+                            <i class="devicon-mongodb-plain colored technos-icon"></i>
+                            <i class="devicon-git-plain colored technos-icon"></i>
+                            <i class="devicon-heroku-original-wordmark colored technos-icon"></i>
+                            <i class="devicon-jest-plain colored technos-icon"></i>
+                        </div>
+                    </article>
+                    {/* <div className="social_media">
+                        <h5>You can find me on :</h5>
+                        <div className='icon_styling'>
+                            <a href="#Twitter">
+                                <i class="fab fa-twitter fa-2x icon"></i>
+                            </a>
+                            <a href="https://www.facebook.com/housm.slm/" target="_blank">
+                                <i class="fab fa-facebook-f icon"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/houssemeddine-salem-734384144/" target="_blank">
+                                <i class="fab fa-linkedin-in icon"></i>
+                            </a>
+                            <a href="https://github.com/HoussemeddineSalem?tab=repositories" target="_blank">
+                                <i class="fab fa-github icon"></i>
+                            </a>
+                        </div>
+                    </div> */}
                     <Button variant="secondary" href={resume} download>DOWNLOAD RESUME</Button>
-                </article>
+                </div>
+
                 <svg
                     width="712"
                     height="670"
@@ -111,28 +135,11 @@ const Aboutme = () => {
                         </clipPath>
                     </defs>
                 </svg>
-                {/* <article className='article contact second_article'>
-                    <h3>Contact :</h3>
-                    <div className='icon_styling'>
-                        <a href="#Twitter">
-                            <i class="fab fa-twitter fa-2x icon"></i>
-                            <span className="social_med_title">Twitter</span>
-                        </a>
-                        <a href="https://www.facebook.com/housm.slm/" target="_blank">
-                            <i class="fab fa-facebook-f icon"></i>
-                            <span className="social_med_title">Facebook</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/houssemeddine-salem-734384144/" target="_blank">
-                            <i class="fab fa-linkedin-in icon"></i>
-                            <span className="social_med_title">LinkedIn</span>
-                        </a>
-                        <a href="https://github.com/HoussemeddineSalem?tab=repositories" target="_blank">
-                            <i class="fab fa-github icon"></i>
-                            <span className="social_med_title" >Github</span>
-                        </a>
-                    </div>
-                </article > */}
-            </div >
+            </div>
+
+
+
+
         </div>
 
     )

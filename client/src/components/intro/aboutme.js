@@ -17,17 +17,23 @@ const Aboutme = () => {
                     <article className='article'>
                         <div>
                             <i class="devicon-html5-plain colored technos-icon"></i>
-                            <i class="devicon-javascript-plain colored technos-icon"></i>
                             <i class="devicon-css3-plain colored technos-icon"></i>
+                            <i class="devicon-javascript-plain colored technos-icon"></i>
                             <i class="devicon-sass-original colored technos-icon"></i>
-                            <i class="devicon-react-original colored  technos-icon"></i>
+
                         </div>
                         <div>
+                            <i class="devicon-react-original colored  technos-icon"></i>
                             <i class="devicon-redux-original colored technos-icon"></i>
                             <i class="devicon-bootstrap-plain colored technos-icon"></i>
                             <i class="devicon-materialui-plain colored technos-icon"></i>
+
+                        </div>
+                        <div>
                             <i class="devicon-nodejs-plain colored technos-icon"></i>
                             <i class="devicon-express-original colored technos-icon"></i>
+                            <i class="devicon-python-plain technos-icon"></i>
+                            <i class="devicon-flask-original colored technos-icon"></i>
                         </div>
                         <div>
                             <i class="devicon-mongodb-plain colored technos-icon"></i>
@@ -53,7 +59,10 @@ const Aboutme = () => {
                             </a>
                         </div>
                     </div> */}
-                    <Button variant="secondary" href={resume} download>DOWNLOAD RESUME</Button>
+                    {/* <Button class="btn-resume" variant="outline-dark" size="sm" href={resume} download>
+                        <i class="far fa-file"></i>
+                        <span>SEE MY RESUME</span>
+                    </Button> */}
                 </div>
 
                 <svg

@@ -1,38 +1,71 @@
 import React from 'react'
-import './intro.css'
+import './intro.scss'
 import profile from '../../img/profile.jpg'
 import Aboutme from './aboutme'
 import Typewriter from 'typewriter-effect'
-
+import introPicture from '../../img/intro-picture.png'
+import { Button } from 'react-bootstrap'
+import resume from '../../img/houssemeddineSalem_res.pdf'
 
 function Intro() {
 
 
     return (
-        <div className="intro_height">
-            <div className='intro_styling'>
-                <div className="image_container">
-                    <img className='profile_picture_styling' src={profile} alt="profilepicture" />
-                </div>
+
+        <div className="intro-container">
+            <div class="context">
+                <img src={introPicture} alt="intro-picture" height="400px" width="400px" />
                 <div>
-                    <Typewriter
-                        options={{
-                            strings: ["Hello, I'm <span>Houssemeddine Salem</span>, <br />I'm a full-stack web developer"],
-                            autoStart: true,
-                            loop: true,
-                            skipAddStyles: true,
-                            wrapperClassName: 'typewriter',
-                            cursor: ''
-                        }}
-                    />
+                    <div className="typewriter-container">
+                        <Typewriter
+                            options={{
+                                strings: ["Hello, I'm Houssemeddine Salem, <br /> I'm a Full Stack Web Developer"],
+                                autoStart: true,
+                                loop: true,
+                                skipAddStyles: true,
+                                wrapperClassName: 'typewriter',
+                                cursor: ''
+                            }}
+                        />
+                    </div>
+                    <div className="social-media-container">
+                        <a href="#Twitter">
+                            <i class="fab fa-twitter fa-2x icon"></i>
+                        </a>
+                        <a href="https://www.facebook.com/housm.slm/" target="_blank">
+                            <i class="fab fa-facebook-f icon"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/houssemeddine-salem-734384144/" target="_blank">
+                            <i class="fab fa-linkedin-in icon"></i>
+                        </a>
+                        <a href="https://github.com/HoussemeddineSalem?tab=repositories" target="_blank">
+                            <i class="fab fa-github icon"></i>
+                        </a>
+                    </div>
+                    <Button class="btn-resume" variant="outline-dark" size="sm" href={resume} download>
+                        <i class="far fa-file"></i>
+                        <span>SEE MY RESUME</span>
+                    </Button>
                 </div>
 
+            </div>
+            <div class="area" >
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
 
             </div>
             <Aboutme />
-
-
-        </div >
+        </div>
 
 
     )

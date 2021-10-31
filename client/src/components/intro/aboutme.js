@@ -42,30 +42,10 @@ const Aboutme = () => {
                             <i class="devicon-jest-plain colored technos-icon"></i>
                         </div>
                     </article>
-                    {/* <div className="social_media">
-                        <h5>You can find me on :</h5>
-                        <div className='icon_styling'>
-                            <a href="#Twitter">
-                                <i class="fab fa-twitter fa-2x icon"></i>
-                            </a>
-                            <a href="https://www.facebook.com/housm.slm/" target="_blank">
-                                <i class="fab fa-facebook-f icon"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/houssemeddine-salem-734384144/" target="_blank">
-                                <i class="fab fa-linkedin-in icon"></i>
-                            </a>
-                            <a href="https://github.com/HoussemeddineSalem?tab=repositories" target="_blank">
-                                <i class="fab fa-github icon"></i>
-                            </a>
-                        </div>
-                    </div> */}
-                    {/* <Button class="btn-resume" variant="outline-dark" size="sm" href={resume} download>
-                        <i class="far fa-file"></i>
-                        <span>SEE MY RESUME</span>
-                    </Button> */}
                 </div>
 
                 <svg
+                    className="svg-styling"
                     width="712"
                     height="670"
                     viewBox="0 0 712 670"

@@ -10,7 +10,7 @@ function NavBar() {
         <Navbar className="navbar_styling" expand="sm" sticky="top">
 
             <Container>
-                <Navbar.Brand className="item_styling" href="#home">HOUSSEMEDDINE SALEM</Navbar.Brand>
+                <Navbar.Brand className="item_styling" href="#intro">HOUSSEMEDDINE SALEM</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Container >

@@ -21,19 +21,26 @@
 }
 .mybestnanny_proj {
   margin-top: 5%;
+  margin: 5% 15% 0 15%;
+  padding: 2% 0 2% 0;
   display: flex;
   justify-content: center;
-}
-
-.img_container {
-  position: relative;
-}
-
-.mybestnanny_img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 7px;
+  // border: 1px black solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  & .mybestnanny {
+    width: 30vw;
+    margin: 0 2%;
+  }
+  & .img_container {
+    position: relative;
+    & .mybestnanny_img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 7px;
+    }
+  }
 }
 
 .middle {
@@ -60,10 +67,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-.mybestnanny {
-  width: 30vw;
-  margin: 0 2%;
 }
 
 .project_title {
@@ -93,15 +96,15 @@
   color: white;
 }
 .tech_styling {
-  background-color: #b1b5b5;
+  background-color: #218c74;
   padding: 1.25% 1.25%;
   margin-right: 2%;
+  margin-top: 2%;
   color: whitesmoke;
   text-decoration: none;
-  animation-name: example;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  border-radius: 3px;
+  // animation-name: example;
+  // animation-duration: 3s;
+  // animation-iteration-count: infinite;
 }
 
 @keyframes example {

@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import mybestnanny from '../../img/mybestnanny.svg'
-import './projects.css'
-import projectDescription from './projectsdescr'
+import './projects.scss'
+import projectDescription from './projectsdescr';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Projects = () => {
+
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, [])
+
     return (
-        <div id="projects">
+        <div id="projects" data-aos="fade-up">
             <div className="project_intro">
                 <i class="fas fa-tools fa-4x"></i>
                 <br />

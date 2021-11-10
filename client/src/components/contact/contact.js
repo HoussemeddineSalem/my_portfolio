@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { Form, Button, Container } from 'react-bootstrap'
 import './contact.css'
-import axios from 'axios'
+import axios from 'axios';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Contact() {
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, [])
     const [entry, setEntry] = useState({
         name: '',
         email: '',
@@ -29,7 +34,7 @@ function Contact() {
     }
     console.log(clicked)
     return (
-        <div id="contact" className="contactme">
+        <div id="contact" className="contactme" data-aos="fade-up">
 
             <Form className="form">
                 <Container className="contact_section">

@@ -1,6 +1,6 @@
 .introduction {
   margin-top: -60px;
-  padding-top: 70px;
+  padding-top: 100px;
   height: 100vh;
 
   & > p {
@@ -56,6 +56,10 @@
           text-decoration: none;
         }
       }
+    }
+    & .svg-styling {
+      width: 712px;
+      height: 670px;
     }
   }
 }
@@ -121,25 +125,15 @@
       height: 100%;
       display: flex;
       flex-direction: column;
-      // align-content: center;
       align-items: center;
       justify-content: center;
-      background-color: green;
 
       & > div {
-        border: 1px black solid;
         height: 40%;
         margin: 0;
-        // height: 60vh;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
-        // align-items: center;
-
         & .article {
           margin: 0;
           padding: 15px;
-          border: 1px red solid;
           width: 100vw;
           height: 50%;
           display: flex;
@@ -148,7 +142,6 @@
           align-content: flex-start;
 
           & > div {
-            // margin-bottom: 25px;
             & .technos-icon {
               margin: 10px;
               font-size: 2.5rem;
@@ -162,8 +155,7 @@
         }
       }
       & .svg-styling {
-        width: 50%;
-        height: 70%;
+        visibility: hidden;
       }
     }
   }

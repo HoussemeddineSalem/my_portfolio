@@ -1,88 +1,120 @@
-import React, { useEffect } from 'react'
-import mybestnanny from '../../img/mybestnanny.svg'
-import './projects.scss'
+import React, { useEffect } from 'react';
+import mybestnanny from '../../img/mybestnanny.svg';
+import mbn1 from '../../img/mbn1.svg'
+import mbn2 from '../../img/mbn2.svg'
+import './projects.scss';
 import projectDescription from './projectsdescr';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
 const Projects = () => {
-
     useEffect(() => {
         AOS.init({ duration: 2000 });
-    }, [])
+    }, []);
 
     return (
-        <div id="projects" data-aos="fade-up">
-            <div className="project_intro">
-                <i class="fas fa-tools fa-4x"></i>
+        <div id='projects' data-aos='fade-up'>
+            <div className='project_intro'>
+                <i class='fas fa-tools fa-4x'></i>
                 <br />
                 <h3>Projects</h3>
                 <br />
-                <p id="parag_under_projects">I can help you build a product, a feature or a website.
-                    Look through some of my work! If you like what you see and have a project you need coded,
-                    don’t hesistate to contact me.</p>
+                <p id='parag_under_projects'>
+                    I can help you build a product, a feature or a website. Look through
+                    some of my work! If you like what you see and have a project you need
+                    coded, don’t hesistate to contact me.
+                </p>
             </div>
-            <div className='mybestnanny_proj'>
-                <div className="mybestnanny img_container">
-                    <img className=' mybestnanny_img' src={mybestnanny} alt="mybestnanny" />
-                    <div class="middle">
-                        <a href="https://mybestnannys.herokuapp.com/" target="_blanked"><button className="source_btn" >Live Demo</button></a>
-
-                    </div>
+            <div className='mybestnanny_proj' data-aos='zoom-in'>
+                <div className='ribbon'>
+                    <a href='https://mybestnannys.herokuapp.com/' target='_blanked'>
+                        <span>Live demo</span>
+                    </a>
+                </div>
+                <div className='mybestnanny img_container'>
+                    <img
+                        className=' mybestnanny_img'
+                        src={mbn2}
+                        alt='mybestnanny'
+                    />
+                    <img
+                        className=' mybestnanny_img img2'
+                        src={mbn1}
+                        alt='mybestnanny'
+                    />
                 </div>
 
                 <div className='mybestnanny mybestnanny_desc'>
-                    <a href="https://github.com/HoussemeddineSalem/Checkpoint-MernAppBabysitter/tree/master" target="_blank"><p className='project_title'>My Best Nanny <i class="fab fa-github fa-1x"></i></p> </a>
-                    <p>Based on google Maps API, this app allows for : <br />
-                        <i class="fas fa-chevron-circle-right"></i>Parents to : <br />
+                    <a
+                        href='https://github.com/HoussemeddineSalem/Checkpoint-MernAppBabysitter/tree/master'
+                        target='_blank'
+                    >
+                        <p className='project_title'>
+                            My Best Nanny <i class='fab fa-github fa-1x'></i>
+                        </p>{' '}
+                    </a>
+                    <p>
+                        Based on google Maps API, this app allows for : <br />
+                        <i class='fas fa-chevron-circle-right'></i>Parents to : <br />
                         Search and Sort for baby sitters in any desired area <br />
-                        <i class="fas fa-chevron-circle-right"></i>Nannys to : <br />
-                        Post their profile in order to be visible for the baby sitting seekers
+                        <i class='fas fa-chevron-circle-right'></i>Nannys to : <br />
+                        Post their profile in order to be visible for the baby sitting
+                        seekers
                     </p>
                     <p>Technologies </p>
-                    <div className="wrapin_tech">
-                        {['reactjs', 'redux', 'axios', 'nodejs', 'jwt', 'expressjs', 'mongoDB', 'mongoose'].map(
-                            el => {
-                                return <span className="tech_styling">{el}</span>
-                            }
-                        )}
+                    <div className='wrapin_tech'>
+                        {[
+                            'reactjs',
+                            'redux',
+                            'axios',
+                            'nodejs',
+                            'jwt',
+                            'expressjs',
+                            'mongoDB',
+                            'mongoose',
+                        ].map((el) => {
+                            return <span className='tech_styling'>{el}</span>;
+                        })}
                     </div>
-
-
                 </div>
             </div>
 
-            {
-                projectDescription.map(el => {
-                    return <div className='mybestnanny_proj'>
-                        <div className="mybestnanny img_container">
-                            <img className='mybestnanny mybestnanny_img' src={el.image} alt="mybestnanny" />
-                            <div class="middle">
-                                <a href={el.demo} target="_blank"><button className="source_btn">Live Demo</button></a>
-                            </div>
+            {projectDescription.map((el) => {
+                return (
+                    <div className='mybestnanny_proj' data-aos='zoom-in'>
+                        <div className='ribbon'>
+                            <a href='https://mybestnannys.herokuapp.com/' target='_blanked'>
+                                <span>Live demo</span>
+                            </a>
+                        </div>
+                        <div className='mybestnanny img_container'>
+                            <img
+                                className='mybestnanny mybestnanny_img'
+                                src={el.image}
+                                alt='mybestnanny'
+                            />
                         </div>
                         <hr />
                         <div className='mybestnanny mybestnanny_desc'>
-                            <a href={el.github} target="_blank"><p className='project_title'>{el.title} <i class="fab fa-github fa-1x"></i></p> </a>
+                            <a href={el.github} target='_blank'>
+                                <p className='project_title'>
+                                    {el.title} <i class='fab fa-github fa-1x'></i>
+                                </p>{' '}
+                            </a>
                             <p>{el.description}</p>
                             <p>Technologies</p>
-                            <div className="wrapin_tech">
-                                {
-                                    el.technologies.map(el => {
-                                        return <span className="tech_styling">{el}</span>
-                                    })
-                                }
+                            <div className='wrapin_tech'>
+                                {el.technologies.map((el) => {
+                                    return <span className='tech_styling'>{el}</span>;
+                                })}
                             </div>
                         </div>
                     </div>
-                })
-            }
-            <div>
-            </div>
-        </div >
+                );
+            })}
+            <div></div>
+        </div>
+    );
+};
 
-    )
-}
-
-export default Projects
+export default Projects;

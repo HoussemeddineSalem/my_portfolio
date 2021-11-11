@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import './aboutme.scss';
 import { Button } from 'react-bootstrap';
-import resume from '../../img/houssemeddineSalem_res.pdf';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

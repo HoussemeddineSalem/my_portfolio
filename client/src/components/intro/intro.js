@@ -5,7 +5,7 @@ import Aboutme from './aboutme'
 import Typewriter from 'typewriter-effect'
 import introPicture from '../../img/intro-picture.png'
 import { Button } from 'react-bootstrap'
-import resume from '../../img/houssemeddineSalem_res.pdf'
+import resume from '../../img/houssemeddineSalem_resume.pdf'
 
 function Intro() {
 
